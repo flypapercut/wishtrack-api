@@ -1,0 +1,30 @@
+{
+	"name": "wishtrack-api",
+	"version": "1.0.0",
+	"description": "Wishlist com rastreamento de preços, histórico de compras e controle de aquisições",
+	"main": "index.js",
+	"scripts": {
+		"dev": "node --watch --env-file=.env ./src/server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/flypapercut/wishtrack-api.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/flypapercut/wishtrack-api/issues"
+	},
+	"homepage": "https://github.com/flypapercut/wishtrack-api#readme",
+	"dependencies": {
+		"cors": "^2.8.6",
+		"express": "^5.2.1",
+		"knex": "^3.2.9",
+		"sqlite": "^5.1.1",
+		"sqlite3": "^6.0.1",
+		"uuid": "^14.0.0"
+	}
+}
