@@ -7,7 +7,7 @@ export default {
 	development: {
 		client: "sqlite3",
 		connection: {
-			filename: process.env.DB_DIRECTORY,
+			filename: process.env.DB_PATH,
 		},
 		migrations: {
 			directory: "./src/db/migrations",
