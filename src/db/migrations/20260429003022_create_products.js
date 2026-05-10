@@ -4,9 +4,10 @@
  */
 export const up = function (knex) {
 	return knex.schema.createTable("products", (t) => {
-		t.string("id").unique();
-		t.string("name");
+		t.string("id").unique().notNullable();
+		t.string("name").notNullable();
 		t.string("description");
+		t.string("brand");
 	});
 };
 
