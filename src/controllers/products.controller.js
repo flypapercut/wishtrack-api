@@ -40,7 +40,7 @@ class ProductsController {
 			console.log("insert");
 			return res.status(201).json({ message: "created" });
 		} catch (error) {
-			console.log(error);
+			next(error);
 		}
 	}
 	async update(req, res, next) {
